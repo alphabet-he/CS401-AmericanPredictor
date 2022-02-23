@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: american-predictor-deployment
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: american-predictor
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: american-predictor
-        image: docker.io/alphabethe/american-predictor:0.3
+        image: docker.io/alphabethe/american-predictor:0.4
         ports:
         - containerPort: 5004

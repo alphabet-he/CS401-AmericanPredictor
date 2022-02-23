@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: american-predictor-deployment
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: american-predictor
